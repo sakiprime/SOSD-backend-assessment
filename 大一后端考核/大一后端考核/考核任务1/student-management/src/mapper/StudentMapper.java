@@ -18,7 +18,7 @@ public interface StudentMapper {
 
     Student getById(String studentId);
 
-    List getAll();
+    List<Student> getAll();
 
     boolean update(Student student);
 
