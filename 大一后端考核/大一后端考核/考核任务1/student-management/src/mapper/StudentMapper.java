@@ -24,6 +24,5 @@ public interface StudentMapper {
 
     boolean delete(String studentId);
 
-    //TODO 请在此处补全操作HashMap所需的方法
 
 }
