@@ -115,6 +115,9 @@ public class StudentServiceImpl implements StudentService {
         if (student.getGender()==null){
             student.setGender(oldStudent.getGender());
         }
+        if (student.getAge() == 0){
+            student.setAge(oldStudent.getAge());
+        }
         if (student.getAge() < 18 || student.getAge() > 25) {
             return "修改失败：年龄必须在18-25岁之间！";
         }
